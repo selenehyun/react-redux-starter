@@ -1,0 +1,41 @@
+body {
+    #app, #app > [data-reactroot], #app > [data-reactroot] > .ui.pushable.segment {
+        height: 100%;
+    }
+
+    #app > [data-reactroot] {
+        padding-top: 40px;
+
+        & > .ui.menu, & > .ui.pushable.segment {
+            margin: 0;
+        }
+
+        & > .ui.menu {
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid rgba(34,36,38,.15);
+
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+
+        & > .ui.pushable.segment {
+            box-shadow: none;
+            border: 0;
+            border-radius: 0;
+
+            #myMap {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+
+        }
+    }
+}
